@@ -1,0 +1,618 @@
+q2
+let personName = "Hassan"; console.log(“Hello " + personName + " , would you like to learn some Python today?”);
+
+q3
+let personName = "I m Hassan"; function titleCase(str) { str = str.toLowerCase() .split(' ') .map(function(word) { return (word.charAt(0).toUpperCase() + word.slice(1)); }); return str.join(' '); } console.log(personName.toLowerCase()); console.log(personName.toUpperCase()); console.log(titleCase(personName)); 
+
+q4
+console.log(`Albert Einstein once said "A person who never made a mistake never tried anything new."`);
+
+q5
+let quote = "A person who never made a mistake never tried anything new.”; let author = "Albert Einstein"; console.log(`${author} once said "${quote}"`);
+
+q6
+let str = "I am Hassan" + " ".repeat(10) + "I am HASSAN";
+console.log(str);
+
+q7-8
+let addition = 5+3;
+let subtraction = 10-2;
+let multiplication = 2*4;
+let division = 16/2;
+console.log(addition,subtraction,multiplication,division);
+
+q9
+let favNumber = 202;
+console.log(favNumber);
+
+q10
+let name = "HASSAN"
+let date = new Date();
+console.log(`${name} is doing Panaverse Assignment at ${date}`);
+//////// in console we are printing name and present date
+
+q11
+let names = new Array();
+names.push('hassan','aslam','akram',"arslan");
+console.log(names);
+names.map((i)=>{
+    console.log(i);
+})
+
+q12
+let names = new Array();
+names.push('hassan','aslam','akram',"arslan");
+console.log(names);
+names.map((i)=>{
+    console.log("I am "+i);
+})
+
+q13
+let arr = new Array();
+arr.push(
+    {
+    transport:"Car",
+    Company:"Honda"
+},
+{
+    transport:"Motorcycle",
+    Company:"Honda"
+},
+{
+    transport:"Heavy Bike",
+    Company:"Yamaha"
+});
+console.log(arr);
+arr.map((i)=>{
+    console.log("transport is: "+i.transport +"and Company is: "+ i.Company);
+})
+
+q14
+let guests = new Array();
+guests.push("Aslam","Akram","Saima");
+console.log(guests);
+guests.map((i)=>{
+    console.log(i+" I would like to invite you on Dinner.");
+})
+
+q15
+let guests = new Array();
+guests.push("Aslam","Akram","Saima");
+console.log(guests);
+guests.map((i)=>{
+    console.log(i+" I would like to invite you on Dinner.");
+})
+console.log('Saima could not make it');
+let newGuests = new Array(); 
+newGuests = guests.filter(i=>i!=="Saima");
+console.log(newGuests);
+newGuests.push("Fatima");
+newGuests.map((i)=>{
+    console.log(i+" I would like to invite you on Dinner.");
+})
+
+q16
+let guests = new Array();
+guests.push("Aslam","Akram","Saima");
+// console.log(guests);
+guests.map((i)=>{
+    console.log(i+" I would like to invite you on Dinner.");
+})
+console.log('Saima could not make it');
+let newGuests = new Array(); 
+newGuests = guests.filter(i=>i!=="Saima");
+console.log(newGuests);
+newGuests.push("Fatima");
+newGuests.map((i)=>{
+    console.log(i+" I would like to invite you on Dinner.");
+})
+newGuests.unshift("Hassan");
+newGuests.splice(Math.abs(newGuests.length/2),0,"Rayyan");
+newGuests.push("Ahmed");
+newGuests.map((i)=>{
+    console.log(i+" I have found a bigger dinner table so I would like to invite you on Dinner.");
+})
+console.log(newGuests);
+
+q17
+let guests = new Array();
+guests.push("Aslam","Akram","Saima");
+// console.log(guests);
+// guests.map((i)=>{
+//     console.log(i+" I would like to invite you on Dinner.");
+// })
+console.log('Saima could not make it');
+let newGuests = new Array(); 
+newGuests = guests.filter(i=>i!=="Saima");
+console.log(newGuests);
+newGuests.push("Fatima");
+newGuests.map((i)=>{
+    console.log(i+" I would like to invite you on Dinner.");
+})
+newGuests.unshift("Hassan");
+newGuests.splice(Math.abs(newGuests.length/2),0,"Rayyan");
+newGuests.push("Ahmed");
+newGuests.map((i)=>{
+    console.log(i+" I have found a bigger dinner table so I would like to invite you on Dinner.");
+})
+console.log(newGuests);
+
+console.log("you can invite only two people for dinner.");
+for(var i=0;i<=newGuests.length;i++)
+{
+    if(newGuests.length > 2)
+    {
+        console.log("we are sorry we cannot invite you "+newGuests.pop());
+    }
+}
+console.log(newGuests);
+for(var i=0;i<=newGuests.length;i++)
+{
+        console.log("to empty array "+newGuests.pop());
+}
+
+q18
+let places = ["Pakistan","UAE","Australia","Canada","America"];
+console.log("original",places);
+console.log("alphabetical sort",[...places].sort());
+console.log("original",places);
+console.log("alphabetical reverse sort",[...places].sort().reverse());
+console.log("original",places);
+console.log("sort",places.reverse());
+console.log("original",places);
+console.log("sort",places.reverse());
+console.log("original",places);
+console.log("alphabetical sort",places.sort());
+console.log("original",places);
+console.log("alphabetical reverse sort",places.sort().reverse());
+console.log("original",places);
+
+q19
+let guests = new Array();
+guests.push("Aslam","Akram","Saima");
+console.log(guests);
+console.log("we are inviting ",guests.length);
+guests.map((i)=>{
+    console.log(i+" I would like to invite you on Dinner.");
+})
+console.log('Saima could not make it');
+let newGuests = new Array(); 
+newGuests = guests.filter(i=>i!=="Saima");
+console.log(newGuests);
+console.log("we are inviting ",newGuests.length);
+newGuests.push("Fatima");
+newGuests.map((i)=>{
+    console.log(i+" I would like to invite you on Dinner.");
+})
+newGuests.unshift("Hassan");
+newGuests.splice(Math.abs(newGuests.length/2),0,"Rayyan");
+newGuests.push("Ahmed");
+newGuests.map((i)=>{
+    console.log(i+" I have found a bigger dinner table so I would like to invite you on Dinner.");
+})
+console.log(newGuests);
+console.log("we are inviting ",newGuests.length);
+console.log("you can invite only two people for dinner.");
+for(var i=0;i<=newGuests.length;i++)
+{
+    if(newGuests.length > 2)
+    {
+        console.log("we are sorry we cannot invite you "+newGuests.pop());
+    }
+}
+console.log(newGuests);
+console.log("we are inviting ",newGuests.length);
+for(var i=0;i<=newGuests.length;i++)
+{
+        console.log("to empty array "+newGuests.pop());
+}
+console.log("we are inviting ",newGuests.length);
+
+q20
+let obj ={
+    mountains:1187049 , 
+    rivers:76,
+    countries:195,
+    cities:436,
+    languages:7100
+}
+console.log(obj);
+
+q21
+let obj ={
+    mountains:1187049 , 
+    rivers:76,
+    countries:195,
+    cities:436,
+    languages:7100
+}
+console.log(obj);
+
+q22
+arr=[1,2,3,4,5,6,7,8,9,10]
+for(var i=0;i<10;i++)
+{
+    console.log(arr[i+1]);
+    ///intentional index error
+}
+
+arr=[1,2,3,4,5,6,7,8,9,10]
+for(var i=0;i<10;i++)
+{
+    console.log(arr[i]);
+    ////corrected error
+}
+
+q23
+let car = 'subaru';
+let num = 1;
+let strNum = "1";
+console.log("Is car == 'subaru'? I predict True.")
+
+console.log(car == 'subaru')
+console.log(num == 1);
+console.log(num === 1);
+console.log(strNum === "1");
+console.log(num <= 1);
+console.log(num > 1);
+console.log(strNum === 1);
+console.log(car == "subaru" ? "this is sabaru" : "this is not sabaru");
+
+q24
+let car = 'subaru';
+let num = 1;
+let strNum = "1";
+arr=[1,2,3,4,5];
+
+console.log("Tests for equality and inequality with strings")
+console.log(car === 'subaru')
+console.log(car !== 'subaru')
+
+console.log("Tests using the lower case function")
+console.log(car.toLowerCase() === 'subaru');
+
+console.log("Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to")
+console.log(num == 1);
+console.log(num === 1);
+console.log(num < 1);
+console.log(num <= 1);
+console.log(num >= 1);
+console.log(num > 1);
+
+console.log("Tests using and and or operators")
+console.log(num <= 1 && car === 'subaru');
+console.log(num <= 1 || car === 'subaru');
+
+console.log("Test whether an item is in a array")
+console.log(arr.includes(1));
+
+console.log("Test whether an item is not in a array")
+console.log(arr.includes(6));
+
+q25
+let alien_color = "green" || "yellow" || "red";
+
+if(alien_color == "green")
+{
+    console.log("you have earned 5 points");
+}
+else
+{
+    
+}
+
+q26
+
+let alien_color = ["green","yellow","red"]
+
+if(alien_color[Math.floor(Math.random()*alien_color.length)] == "red")
+{
+    console.log("you have earned 5 points");
+}
+else
+{
+     console.log("you have earned 10 points");
+}
+
+q27
+let alien_color = ["green","yellow","red"]
+random_alien_color = alien_color[Math.floor(Math.random()*alien_color.length)];
+console.log(random_alien_color);
+if(random_alien_color == "green")
+{
+    console.log("you have earned 5 points");
+}
+else if (random_alien_color == "yellow")
+{
+     console.log("you have earned 10 points");
+}
+else if (random_alien_color == "red")
+{
+    console.log("you have earned 15 points");
+}
+
+q28
+random_age = Math.floor(Math.random()*100)
+console.log(random_age);
+if( random_age < 2)
+{
+    console.log("person is a baby");
+}
+else if(random_age >= 2 && random_age<4)
+{
+    console.log("the person is a toddler.")
+}
+else if(random_age >= 4 && random_age<13)
+{
+    console.log("the person is a kid.")
+}
+else if(random_age >= 13 && random_age<20)
+{
+    console.log("the person is a teenager.")
+}
+else if(random_age >= 20 && random_age<65)
+{
+    console.log("the person is a adult.")
+}
+else if(random_age<=65)
+{
+    console.log("the person is a elder.")
+}
+
+q29
+fruits = new Array();
+fruits.push("Apple","Banana","Mango");
+if(fruits.includes("Banana"))
+{
+    console.log("You really like bananas!")
+}
+else if(fruits.includes("Orange"))
+{
+    console.log("You really like Orange!")
+}
+else if(fruits.includes("Grapes"))
+{
+    console.log("You really like Grapes!")
+}
+
+q30
+names=["admin","eric","hassan","aslam","admin"];
+names.map((i)=>
+{
+    if(i == "admin")
+    {
+        console.log("Hello admin, would you like to see a status report?");
+    }
+    else
+    {
+        console.log(`Hello ${i}, thank you for logging in again.`)
+    }
+})
+
+q31
+names=["admin","eric","hassan","aslam","admin"];
+names=[];
+ if(names.length<=0)
+    {
+        console.log("We need to find some users!")
+    }
+    else
+    {
+names.map((i)=>
+{
+    if(i == "admin")
+    {
+        console.log("Hello admin, would you like to see a status report?");
+    }
+    else
+    {
+        console.log(`Hello ${i}, thank you for logging in again.`)
+    }
+})
+}
+
+q32
+users=["admin","eric","hassan","aslam","natasha"];
+new_users=["ahmed","rayyan","ayesha","hassan","admin"];
+new_users.map((i)=>
+{
+    if(users.includes(i)){
+        console.log(i+" the person will need to enter a new username.")
+    }
+    else
+    {
+        console.log(i+" person is available")
+    }
+})
+
+q33
+arr=[1,2,3,4,5,6,7,8,9];
+arr.map((i)=>{
+    if(i == 1)
+    {
+        console.log(i+"st")
+    }
+    else if(i == 2)
+    {
+        console.log(i+"nd");
+    }
+    else if(i == 3)
+    {
+        console.log(i+"rd");
+    }
+    else
+    {
+         console.log(i+"th");
+    }
+})
+
+q34
+pizza=["pepperoni","tikka","crown"];
+pizza.map((i)=>
+{
+    console.log("I like "+i+" pizza");
+})
+console.log("These are very delicious pizza's");
+console.log("I really love these pizza's")
+
+q35
+arrObj=[{
+    animal:"dog",
+    characteristics:"great pet"
+},
+{
+    animal:"Lion",
+    characteristics:"wild animal"
+},
+{
+    animal:"parrot",
+    characteristics:"great pet"
+},]
+
+arrObj.map((i)=>
+{
+    console.log("A "+i.animal+" is a "+i.characteristics );
+})
+console.log("the main characteristics is: "+arrObj.filter((i)=>i.characteristics == "great pet")[0].characteristics);
+
+
+q36
+const make_shirt=(size,txt)=>
+{
+    console.log(txt+" "+size);
+}
+make_shirt(100,"the size of shirt is")
+
+q37
+const make_shirt=(size,txt)=>
+{
+    if(size=="large" || size == "medium")
+    {
+        console.log("i love javascript");
+    }
+    else{
+    console.log(txt+" "+size);
+}
+    }
+make_shirt("large","the size of shirt is")
+make_shirt("medium","the size of shirt is")
+make_shirt("small","the size of shirt is")
+
+q38
+const describe_city=(city,country="pakistan")=>
+{
+    console.log(city+" is in "+country)
+}
+describe_city("lahore");
+describe_city("Karachi");
+describe_city("Dubai","UAE");
+
+q39
+const city_country=(city,country="pakistan")=>
+{
+   return city+","+country
+}
+console.log(city_country("lahore"));
+console.log(city_country("Karachi"));
+console.log(city_country("Dubai","UAE"));
+
+q40
+const make_album = (artist,title)=>
+{
+     album_dict = {
+        artist: artist,
+        title: title,
+        }
+    return album_dict
+}
+album = make_album('hassan', 'twinkle')
+console.log(album);
+album = make_album('ahmed', 'super')
+console.log(album);
+album = make_album('khan', 'yoman')
+console.log(album);
+
+q41
+const org = ["hassan","ahmed","khan"];
+const show_magicians = (arr)=>
+{
+    arr.map((i)=>
+    {
+        console.log("the magician is: ",i)
+    })
+}
+show_magicians(org);
+
+q42
+const org = ["hassan","ahmed","khan"];
+const show_magicians = (arr)=>
+{
+    arr.map((i)=>
+    {
+        console.log("the magician is: ",i)
+    })
+}
+const make_great=(arr)=>
+{
+    arr.map((i,j)=>
+    {
+        arr[j]=arr[j].concat(" the great");
+    })
+}
+show_magicians(org);
+make_great(org);
+show_magicians(org);
+
+q43
+const org = ["hassan","ahmed","khan"];
+const copyorg=[...org];
+const show_magicians = (arr)=>
+{
+    arr.map((i)=>
+    {
+        console.log("the magician is: ",i)
+    })
+}
+const make_great=(arr)=>
+{
+    arr.map((i,j)=>
+    {
+        arr[j]=arr[j].concat(" the great");
+    })
+}
+show_magicians(org);
+make_great(copyorg);
+show_magicians(copyorg);
+
+q44
+const make_sandwich = (...items)=>
+{
+    console.log("the ordered sandwich is: ")
+    items.map((i)=>
+    {
+        console.log("with "+i)
+    })
+}
+make_sandwich('cheese', 'lettuce','chicken');
+make_sandwich('cheese', 'lettuce','beef','jalapeno');
+make_sandwich('cheese', 'lettuce','chicken',"spice","mayonaise","olives");
+
+q45
+const make_car=(constructor, model,options)=>
+{
+    const car = {
+        constructor: constructor,
+        model: model,
+        }
+        Object.entries(options).map((i)=>
+        {
+            car[`${i[0]}`]=i[1];
+        })
+    return car;
+}
+var my_outback = make_car('toyota', 'corolla', {color:'blue',price:"10000"})
+console.log(my_outback)
+my_outback = make_car('suzuki', 'mehran', {color:'black',price:"10000",comfortable:true})
+console.log(my_outback)
+my_outback = make_car('hyundai', 'sonata', {color:'grey',price:"10000",engine:true})
+console.log(my_outback)
